@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="5dp"
+      app:cardCornerRadius="6dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+      <ImageView
+          android:layout_width="30dp"
+          android:layout_height="30dp"
+          android:id="@+id/imgIcon"
+          android:src="@drawable/probiotic"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/imgIcon"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="5dp"
+          android:text="Crocin Advance 500mg Tablet 15's"
+          android:textSize="14sp"
+          android:fontFamily="@font/poppins"
+          android:textColor="@android:color/black"
+          android:id="@+id/txtMedecineName"/>
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/imgIcon"
+          android:layout_below="@id/txtMedecineName"
+          android:layout_marginLeft="10dp"
+          android:text="Glaxo Smithkline(Consumer HC)"
+          android:textSize="12sp"
+          android:fontFamily="@font/poppins"
+          android:id="@+id/txtCompanyName"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/imgIcon"
+          android:layout_below="@id/txtCompanyName"
+          android:layout_marginLeft="10dp"
+          android:text="Rs."
+          android:textSize="12sp"
+          android:fontFamily="@font/poppins"
+          android:id="@+id/txtPrice1"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_toEndOf="@id/txtPrice1"
+          android:layout_below="@id/txtCompanyName"
+          android:layout_marginLeft="6dp"
+          android:textColor="@android:color/black"
+          android:text="14.22"
+          android:textSize="12sp"
+          android:fontFamily="@font/poppins"
+          android:id="@+id/txtPrice"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="35dp"
+          android:layout_toEndOf="@id/imgIcon"
+          android:layout_below="@id/txtPrice"
+          android:layout_alignParentRight="true"
+          android:text="Add To Cart"
+          android:textSize="10dp"
+          android:fontFamily="@font/poppins"
+          android:layout_marginLeft="160dp"
+          android:layout_marginBottom="6dp"
+          android:layout_marginRight="8dp"
+          android:textColor="@color/white"
+          android:gravity="center"
+          android:background="@drawable/backbutton"
+          android:id="@+id/txtpurchase"/>
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

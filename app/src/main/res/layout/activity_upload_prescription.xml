@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UploadPrescription">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/imgBack"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Prescription"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/imgBack"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/backtextviewcontclinic"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/addMore">
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/ic_add_black_24dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Add More"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/textData"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:id="@+id/galleryImage"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Any Changes?"
+            android:layout_margin="10dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/changes"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/backtextviewcontclinic"
+            android:layout_below="@id/changes"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Add any additional medicine or products that you require here with all details."
+            android:padding="10dp"
+            android:textSize="13dp"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/et_changes"/>
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/et_changes"-->
+        <!--            android:layout_margin="10dp"-->
+        <!--            android:text="Who is this medicine for?"-->
+        <!--            android:textSize="14sp"-->
+        <!--            android:textColor="@android:color/black"-->
+        <!--            android:fontFamily="@font/poppins"/>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/backbutton"
+            android:layout_alignParentBottom="true"
+            android:text="Continue"
+            android:textAllCaps="true"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

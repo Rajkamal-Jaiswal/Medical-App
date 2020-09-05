@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.all_fragments.PaymentHealthFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payments Options"
+        android:fontFamily="@font/poppins"
+        android:padding="15dp"
+        android:background="#ececec"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HealthCash                                0.0    >"
+        android:fontFamily="@font/poppins"
+        android:textColor="@android:color/black"
+        android:padding="15dp"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

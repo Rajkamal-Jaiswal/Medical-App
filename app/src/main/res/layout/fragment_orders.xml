@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.all_fragments.OrdersFragment">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_margin="10dp"
+      android:text="Search Medicine"
+      android:drawableRight="@drawable/ic_search_black_24dp"
+      android:textSize="15sp"
+      android:padding="8dp"
+      android:id="@+id/txtSearchView"
+      android:background="@drawable/backtextviewcontclinic" />
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:text="Order Through Prescription"
+          android:textSize="15sp"
+          android:fontFamily="@font/poppins"
+          android:textColor="#5226b4"/>
+      <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="170dp"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:background="@drawable/medicineorderpre"/>
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:text="Upload Prescription to order"
+          android:gravity="center"
+          android:background="@drawable/backbutton"
+          android:textColor="@android:color/white"
+          android:textAllCaps="false"
+          android:id="@+id/btn_upload"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          android:gravity="center"
+          android:id="@+id/no_prescription"
+          android:text="Don't have prescription?"
+          android:textSize="15sp"
+          android:fontFamily="@font/poppins"
+          android:textColor="#07a831"/>
+
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

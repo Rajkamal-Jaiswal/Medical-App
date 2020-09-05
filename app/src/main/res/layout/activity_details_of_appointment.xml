@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailsOfAppointment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/back_arrow"/>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Details of Appointments"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/lustria"
+            android:layout_toEndOf="@id/imgBack"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ladydoc"
+            android:id="@+id/docpic"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/docpic"
+            android:id="@+id/dr_name"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="20dp"
+            android:text="Dr. Vimala Chopra"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/docpic"
+            android:layout_below="@id/dr_name"
+            android:layout_marginTop="-5dp"
+            android:layout_marginLeft="20dp"
+            android:text="Dermacure Clinic,Aliganj"/>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/docpic"
+            android:layout_marginTop="15dp"
+            android:background="#ececec"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/card1">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backtestlabpatintdetail">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4 may-17 may"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/date"/>
+
+                        <TextView
+                            android:id="@+id/slot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/date"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text="No slots availables"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/card2">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backtestlabpatintdetail">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Mon,18 may"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/date1"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="10 slots available"
+                            android:gravity="center"
+                            android:layout_below="@id/date1"
+
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@android:color/holo_green_dark"
+                            android:id="@+id/slot1"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/card3">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backtestlabpatintdetail">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tue,19 May"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/date2"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="7 slots available"
+                            android:textColor="@android:color/holo_green_dark"
+
+                            android:gravity="center"
+                            android:layout_below="@id/date2"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/slot2"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    app:cardCornerRadius="6dp"
+                    android:id="@+id/card4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/backtestlabpatintdetail">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wed,20 May"
+                            android:gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textSize="15sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/date4"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="9 slots available"
+
+                            android:textColor="@android:color/holo_green_dark"
+                            android:gravity="center"
+                            android:layout_below="@id/date4"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/slot4"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Show Date"
+        android:id="@+id/show_date"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#c9c9c9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/frame_layout"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

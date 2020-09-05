@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MedicineDeliveryAddress">
+
+    <LinearLayout
+        android:id="@+id/rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:id="@+id/imgBack"/>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lustria"
+            android:layout_toEndOf="@id/imgBack"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:background="@drawable/ic_add_location_black_24dp"
+            android:id="@+id/location"/>
+        <TextView
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBaseline="@id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indira Nagar,Lucknow "
+            android:layout_toRightOf="@id/location"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="House Number/Building Number"
+        android:textSize="13sp"
+        android:id="@+id/et_houseNumber"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Street Address"
+        android:textSize="13sp"
+        android:id="@+id/et_streetAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Delivery Pincode"
+        android:textSize="13sp"
+        android:id="@+id/et_pincodeDelivery"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Contact Number"
+        android:textSize="13sp"
+        android:id="@+id/et_contactNumber"
+        android:inputType="phone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tag Address as "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <RadioGroup
+        android:layout_gravity="left"
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:paddingRight="10dp"/>
+        <RadioButton
+            android:id="@+id/rb_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:paddingRight="10dp"
+            />
+        <RadioButton
+            android:id="@+id/rb_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:paddingRight="10dp" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Name"
+        android:textSize="13sp"
+        android:id="@+id/et_name"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Email"
+        android:textSize="13sp"
+        android:id="@+id/et_email"
+        android:inputType="textEmailAddress"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Confirm Address"
+        android:gravity="center"
+        android:background="@drawable/backbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/btn_confirmAddress"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+
+
+
+</LinearLayout>

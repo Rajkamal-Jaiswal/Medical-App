@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".testLabMyCart">
+
+    <RelativeLayout
+        android:id="@+id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_margin="12dp"
+            android:id="@+id/back_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cart"
+            android:layout_toEndOf="@id/back_arrow"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 226016"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/ic_baseline_location_on"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c2"
+        android:layout_below="@id/c1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="6dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/listItem"
+                android:text="List of Items"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/boldheading"
+                android:fontFamily="@font/poppins"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/healthCheckUp"
+                android:layout_below="@id/listItem"
+                android:text="Health Checkup Standard"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/poppins"/>
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:id="@+id/btn_negative"
+                android:layout_below="@id/listItem"
+                android:layout_toEndOf="@id/healthCheckUp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_minus"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_number"
+                android:layout_below="@id/listItem"
+                android:layout_toEndOf="@id/btn_negative"
+                android:text="1"
+                android:textSize="18dp"
+                android:textColor="@color/boldheading"
+                android:textStyle="bold"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/btn_plus"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_below="@id/listItem"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@id/item_number"
+                android:gravity="center"
+                android:src="@drawable/ic_plus"
+          />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Includes 59 tests"
+                android:layout_below="@id/healthCheckUp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/poppins"
+                android:textSize="12dp"
+                android:id="@+id/testLab"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 999 /-"
+                android:layout_below="@id/testLab"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/boldheading"
+                android:id="@+id/realPrice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 2000 /-"
+                android:layout_below="@id/testLab"
+                android:layout_toEndOf="@id/realPrice"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/disPrice"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/discountOffer"
+                android:text="50% Off"
+                android:layout_below="@id/testLab"
+                android:layout_toEndOf="@id/disPrice"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/backbutton"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:padding="3dp"
+                android:gravity="center"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c3"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/billDetail"
+                android:text="Bill Details"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/boldheading"
+                android:fontFamily="@font/poppins"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/billDetail"
+                android:paddingLeft="10dp"
+                android:text="Item Total"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+                android:textColor="#646464"
+                android:id="@+id/totalItem"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 2000.0 /-"
+                android:layout_below="@id/billDetail"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#646464"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalItem"
+                android:paddingLeft="10dp"
+                android:text="Pickup Charge"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+                android:textColor="#646464"
+                android:id="@+id/piupCharge"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 0.0 /-"
+                android:layout_below="@id/totalItem"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#646464"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/piupCharge"
+                android:paddingLeft="10dp"
+                android:text="Discount"
+                android:fontFamily="@font/poppins"
+                android:textSize="13sp"
+                android:textColor="#646464"
+                android:id="@+id/discount"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 1001.0 /-"
+                android:layout_below="@id/piupCharge"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#646464"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_below="@id/discount"
+                android:layout_marginTop="10dp"
+                android:id="@+id/view"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:paddingLeft="10dp"
+                android:text="Net Payable"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="@color/textcolor"
+                android:id="@+id/payablePrice"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 999.0 /-"
+                android:layout_below="@id/view"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/payablePrice"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/backbutton"
+                android:text="Continue"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:id="@+id/payContinue"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

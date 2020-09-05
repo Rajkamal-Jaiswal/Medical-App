@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/cardLabTestOffer">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Health Checkup - Standard"
+                android:fontFamily="@font/poppins"
+                android:textSize="15sp"
+                android:textColor="#092BE8"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:id="@+id/healthCheckup"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 999 /-"
+                android:layout_alignParentRight="true"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:id="@+id/newPrice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By Thyrocare"
+                android:layout_below="@id/healthCheckup"
+                android:paddingLeft="10dp"
+                android:textColor="#646464"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins"
+                android:id="@+id/testCare"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 2000 /-"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins"
+                android:layout_below="@id/healthCheckup"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:id="@+id/oldPrice"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Includes Tests"
+                android:layout_below="@id/oldPrice"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textSize="12dp"
+                android:id="@+id/incTests"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="60"
+                android:layout_below="@id/incTests"
+                android:paddingLeft="35dp"
+                android:textSize="14dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/NoOfTests"
+                android:layout_marginBottom="6dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/testCare"
+                android:layout_alignParentRight="true"
+                android:text="Book Test"
+                android:padding="4dp"
+                android:background="@drawable/backbutton"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

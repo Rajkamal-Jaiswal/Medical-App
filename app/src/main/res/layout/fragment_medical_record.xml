@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.all_fragments.HomeFragment">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/medicalrecord"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a medical record"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A detailed health history helps a doctor diagnose you better"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="13dp"
+        android:fontFamily="@font/poppins"/>
+
+  </LinearLayout>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:text="Upload Medical Record"
+      android:layout_alignParentBottom="true"
+      android:gravity="center"
+      android:background="@drawable/backbutton"
+      android:textColor="@android:color/white"
+      android:textAllCaps="false"
+      android:id="@+id/btn_addMedicalRecord"/>
+
+</RelativeLayout>

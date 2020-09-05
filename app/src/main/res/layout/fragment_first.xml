@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".slotfragments.FirstFragment">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="No slats availables"
+      android:gravity="center"
+      android:layout_marginTop="50dp"
+      android:textSize="16sp"
+      android:fontFamily="@font/poppins"/>
+
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Next Availability on Mon,18 May"
+      android:layout_margin="15dp"
+      android:textAllCaps="false"
+      android:background="@drawable/backbutton"
+      android:textColor="@android:color/white"
+      android:id="@+id/btn_nextAvailability"
+   />
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="OR"
+      android:gravity="center"
+      android:textSize="16sp"
+      android:fontFamily="@font/poppins"/>
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_margin="15dp"
+      android:background="@drawable/backtextviewcontclinic">
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_local_phone_black_24dp"
+        android:id="@+id/localPhone"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toEndOf="@id/localPhone"
+        android:text="  Contact Clinic"
+        android:layout_marginTop="10dp"
+        android:textColor="#0094d4"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins"/>
+  </RelativeLayout>
+
+
+
+</LinearLayout>

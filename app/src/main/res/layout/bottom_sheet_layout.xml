@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a record"
+        android:textSize="15sp"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/poppins"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/rel_camera">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/camera"
+            android:id="@+id/camera"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a photo"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@id/camera"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/rel_gallery">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/gallery"
+            android:id="@+id/gallery"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload from gallery"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@id/gallery"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:id="@+id/rel_pdfFile">
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/document"
+            android:id="@+id/pdfFile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a photo"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins"
+            android:textColor="@android:color/black"
+            android:layout_toEndOf="@id/pdfFile"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

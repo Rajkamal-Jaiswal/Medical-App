@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BookAppointmntActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/back_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/bookAppoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/back_arrow"
+            android:text="Book Appointment"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/sp_diseasesList"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/search_background"
+                android:entries="@array/diseasesList"
+                android:paddingLeft="16dp" />
+
+            <Button
+                android:id="@+id/btn_sympton"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_below="@id/sp_diseasesList"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/backbutton"
+                android:gravity="center"
+                android:text="Describe your symptom"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/doc_Img"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_margin="15dp"
+                        android:src="@drawable/smartdoc" />
+
+                    <TextView
+                        android:id="@+id/doc_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:layout_toEndOf="@id/doc_Img"
+                        android:fontFamily="@font/poppins"
+                        android:text="Dr. Sudhir Chopara"
+                        android:textColor="@android:color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/doc_Specilist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/doc_name"
+                        android:layout_toEndOf="@id/doc_Img"
+                        android:fontFamily="@font/poppins"
+                        android:text="Cardiologist"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/doc_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/doc_Specilist"
+                        android:layout_toEndOf="@id/doc_Img"
+                        android:fontFamily="@font/poppins"
+                        android:text="8 Years Overall"
+                        android:textSize="12dp" />
+
+                    <ImageButton
+                        android:id="@+id/marsheet"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@id/doc_Img"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/marsheet" />
+
+                    <TextView
+                        android:id="@+id/mbbs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/doc_Img"
+                        android:layout_alignBaseline="@id/marsheet"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/marsheet"
+                        android:fontFamily="@font/poppins"
+                        android:text="MBBS, MD-Medicine, Diploma in Cardiology" />
+
+                    <ImageButton
+                        android:id="@+id/degree"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@id/mbbs"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/degree" />
+
+                    <TextView
+                        android:id="@+id/txt_degree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/marsheet"
+                        android:layout_alignBaseline="@id/degree"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toEndOf="@id/marsheet"
+                        android:fontFamily="@font/poppins"
+                        android:gravity="center_vertical"
+                        android:text="Consultant Physician, Cardiologist" />
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/txt_degree"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#c9c9c9" />
+
+                    <ImageButton
+                        android:id="@+id/location"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_below="@id/view"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_add_location_black_24dp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/view"
+                        android:layout_marginTop="8dp"
+                        android:layout_toEndOf="@id/location"
+                        android:layout_toRightOf="@id/location"
+                        android:fontFamily="@font/poppins"
+                        android:padding="2dp"
+                        android:text="Aliganj:- Arihant Clinic ~ 3.7 km " />
+
+                    <TextView
+                        android:id="@+id/clinic_fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address"
+                        android:layout_toRightOf="@id/location"
+                        android:fontFamily="@font/poppins"
+                        android:padding="2dp"
+                        android:text="In Clinic fees:" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/address"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_toEndOf="@id/clinic_fee"
+                        android:text="Rs. 500"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="-20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/backbutton"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

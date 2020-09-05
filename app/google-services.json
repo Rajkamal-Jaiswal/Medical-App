@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "378071025478",
+    "firebase_url": "https://aaramedical-1abf1.firebaseio.com",
+    "project_id": "aaramedical-1abf1",
+    "storage_bucket": "aaramedical-1abf1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378071025478:android:be90d973e1db46db58c747",
+        "android_client_info": {
+          "package_name": "com.example.aaramidecal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378071025478-n029dt6olnil1rd7u2usn7sam02ka0lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdIL9wG_yyEojzD3oO1Mi-kNu2fcCO89w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378071025478-n029dt6olnil1rd7u2usn7sam02ka0lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

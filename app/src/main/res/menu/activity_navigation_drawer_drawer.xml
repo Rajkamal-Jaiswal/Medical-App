@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_outline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_outline_event_note_24"
+            android:title="@string/menu_appointment" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_testlab"
+            android:title="@string/menu_testBooking" />
+
+        <item android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_order"
+            android:title="@string/menu_orders"/>
+
+        <item android:id="@+id/nav_consultations"
+            android:icon="@drawable/ic_consultaion"
+            android:title="@string/menu_consultation"/>
+
+        <item android:id="@+id/nav_myDoctors"
+            android:icon="@drawable/ic_mydoctors"
+            android:title="@string/menu_mydoctors"/>
+
+        <item android:id="@+id/nav_medicalRecord"
+            android:icon="@drawable/ic_medicalrecord"
+            android:title="@string/menu_medicalRecord"/>
+
+        <item android:id="@+id/nav_reminder"
+            android:icon="@drawable/ic_reminder"
+            android:title="@string/menu_reminder"/>
+
+        <item android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_payment"
+            android:title="@string/menu_payment"/>
+
+        <item android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout_button"
+            android:title="Logout"/>
+
+    </group>
+</menu>

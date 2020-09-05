@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOrder">
+
+    <LinearLayout
+        android:id="@+id/rel_back"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/back_arrow"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_margin="12dp"
+            android:background="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@id/back_arrow"
+            android:text="My Cart"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel_back">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/probiotic" />
+
+        <TextView
+            android:id="@+id/txtMedecineName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@id/imgIcon"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins"
+            android:text="Crocin Advance 500mg Tablet 15's"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtCompanyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtMedecineName"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imgIcon"
+            android:fontFamily="@font/poppins"
+            android:text="Glaxo Smithkline(Consumer HC)"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCompanyName"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/imgIcon"
+            android:fontFamily="@font/poppins"
+            android:text="Rs."
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCompanyName"
+            android:layout_marginLeft="6dp"
+            android:layout_toEndOf="@id/txtPrice1"
+            android:layout_toRightOf="@id/txtPrice1"
+            android:fontFamily="@font/poppins"
+            android:text="14.22"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPrice"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp">
+
+            <ImageView
+                android:id="@+id/btn_minus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:paddingTop="-10dp"
+                android:src="@drawable/ic_minus" />
+
+            <TextView
+                android:id="@+id/txt_totalQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/btn_minus"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/btn_plus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/txt_totalQuantity"
+                android:gravity="center"
+
+
+                android:src="@drawable/ic_plus" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/backbutton"
+        android:gravity="center"
+        android:text="Check Out"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/totalItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_above="@id/btn_checkOut"
+        android:layout_marginLeft="10dp"
+     android:layout_marginBottom="30dp"
+        android:text="Items"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="3dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="80dp"
+        android:layout_toRightOf="@id/totalItem"
+        android:background="@color/textcolor" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+   android:layout_above="@id/btn_checkOut"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="30dp"
+        android:layout_toRightOf="@id/view"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

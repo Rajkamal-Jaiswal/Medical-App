@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PaymentSummery">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/rel_layout">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:layout_margin="10dp"
+            android:id="@+id/back_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Summary"
+            android:layout_toEndOf="@id/back_arrow"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lustria"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SELECTED SPECIALITY"
+                android:padding="15dp"
+                android:fontFamily="@font/abhaya_libre_medium"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="170dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/backtextviewcontclinic"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/addMore">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/stethoscope"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="General Physician"
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/textData"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radioGroup"
+                    android:layout_margin="15dp">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioBtnSingle"
+                        android:text="Single Online Consulation"
+                        android:checked="true"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="15sp"
+                        android:textColor="#142898"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2">
+                        <TextView
+                            android:layout_width="225dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Chat,audio,video consultation and free 3 days follow up"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="27dp"
+                            android:layout_marginRight="20dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_singleFee"
+                            android:layout_weight="1"
+                            android:text="Rs. 199.00"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
+
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioBtnUnlimited"
+                        android:text="Unlimited Consultations with any speciality for 1 month"
+                        android:fontFamily="@font/poppins"
+                        android:textSize="15sp"
+                        android:textColor="#142898"
+                        android:layout_marginTop="10dp"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rs. 399.00"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/txt_unlimitedFee"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_unlimitedFee"
+                            android:text="Billed Monthly"
+                            android:fontFamily="@font/poppins"
+                            android:textSize="12sp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="6dp"/>
+                    </RelativeLayout>
+
+                </RadioGroup>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amount to Pay"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@android:color/black"
+                        android:padding="15dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 199.00"
+                        android:id="@+id/txt_payFee"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@android:color/black"
+                        android:padding="15dp"
+                        android:layout_alignParentRight="true"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 199.00"
+                    android:id="@+id/txt_payAmount"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="Pay and start Chat"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/backbutton"
+                    android:textAllCaps="false"
+                    android:id="@+id/btn_payment"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

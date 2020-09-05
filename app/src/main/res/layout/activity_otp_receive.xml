@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf4fc"
+    tools:context=".OtpReceive">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/flower"
+        android:layout_alignParentRight="true"
+        android:id="@+id/flower"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/flower"
+        android:src="@drawable/lock"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/gif"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your OTP and new Password here"
+        android:layout_below="@id/gif"
+        android:gravity="center"
+        android:fontFamily="@font/lustria"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textopt"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textopt"
+        android:layout_marginTop="30dp"
+        android:id="@+id/rel">
+        <com.goodiebag.pinview.Pinview
+            android:id="@+id/pinview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:pinWidth="40dp"
+            app:pinHeight="40dp"
+            app:pinLength="6"
+            app:cursorVisible="true"
+            app:forceKeyboard="true"
+            app:hint=" "
+            app:inputType="number"
+            app:password="false"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPasswordlayout"
+        app:passwordToggleEnabled="true"
+        android:layout_below="@id/rel"
+        android:layout_marginTop="30dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_pass"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:fontFamily="@font/lustria"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_resetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/etPasswordlayout"
+        android:layout_marginLeft="40dp"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/resetpassback"
+        android:text="Reset Password"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
